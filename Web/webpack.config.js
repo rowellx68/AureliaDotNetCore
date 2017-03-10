@@ -23,7 +23,7 @@ module.exports = {
         filename: "[name].js"
     },
     module: {
-        loaders: [
+        rules: [
             { test: /\.ts$/, include: /App/, loader: "ts-loader", query: { silent: true } },
             { test: /\.html$/, loader: "html-loader" },
             { test: /\.scss$/, loaders: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" }] },
