@@ -2,7 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div aurelia-app="boot">Loading...</div>
+<div aurelia-app="main">
+    <style>
+        .loader {
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <div class="loader">
+        <i class="fa fa-cog fa-spin fa-2x fa-fw" aria-hidden="true"></i>
+    </div>
+</div>
+
 
 @section scripts {
     <script type="text/javascript" src="~/dist/vendor.js" asp-append-version="true"></script>
