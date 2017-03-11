@@ -3,7 +3,8 @@ declare const IS_DEV_BUILD: boolean; // The value is supplied by Webpack during 
 
 export function configure(app: Aurelia) {
 
-    app.use.standardConfiguration();
+    app.use.standardConfiguration()
+            .feature("components");
 
     if (IS_DEV_BUILD) {
         app.use.developmentLogging();
